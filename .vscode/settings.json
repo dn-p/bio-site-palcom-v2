@@ -1,0 +1,8 @@
+{
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontLigatures": true,
+    "editor.cursorBlinking": "expand",
+    "editor.smoothScrolling": true,
+    "editor.mouseWheelZoom": true,
+    "editor.bracketPairColorization.enabled": true
+}
