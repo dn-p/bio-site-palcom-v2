@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Campus</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -14,88 +15,97 @@
         <div class="hero-content">
             <h1>Prepare Your Future in a <span class="highlight">Smart Campus</span></h1>
             <p>Top #100 Indonesian Campus</p>
-            <!-- <a href="#" class="cta-button">Daftar Sekarang</a> -->
+            <a href="#" class="cta-button">Daftar Sekarang</a>
         </div>
     </header>
-
-    <!-- SECTION: Penerimaan Mahasiswa Baru -->
-    <section class="pmb">
-        <img src="pmb-banner.jpg" alt="Penerimaan Mahasiswa Baru">
-    </section>
 
     <!-- LINK PENDAFTARAN -->
     <section class="registration">
         <h2>Link Pendaftaran</h2>
         <div class="grid-container">
             <div class="grid-item">
-                <div class="icon-circle"><img src="icon1.png"></div>
+                <div class="icon-circle"><img src="images/toga.png"></div>
                 <p>Daftar Sarjana</p>
             </div>
             <div class="grid-item">
-                <div class="icon-circle"><img src="icon2.png"></div>
+                <div class="icon-circle"><img src="images/toga-2.png"></div>
                 <p>Daftar Profesional 1 Tahun</p>
             </div>
             <div class="grid-item">
-                <div class="icon-circle"><img src="icon3.png"></div>
+                <div class="icon-circle"><img src="images/scourse.png"></div>
                 <p>Daftar Short Course</p>
             </div>
             <div class="grid-item">
-                <div class="icon-circle"><img src="icon4.png"></div>
+                <div class="icon-circle"><img src="images/event.png"></div>
                 <p>Daftar Event & Workshop</p>
             </div>
             <div class="grid-item">
-                <div class="icon-circle"><img src="icon5.png"></div>
+                <div class="icon-circle"><img src="images/toga3.png"></div>
                 <p>Daftar Beasiswa</p>
             </div>
             <div class="grid-item">
-                <div class="icon-circle"><img src="icon6.png"></div>
+                <div class="icon-circle"><img src="images/coffee.png"></div>
                 <p>Daftar Coffee Talk</p>
             </div>
             <div class="grid-item">
-                <div class="icon-circle"><img src="icon7.png"></div>
+                <div class="icon-circle"><img src="images/loc.png"></div>
                 <p>Daftar Campus Visit</p>
             </div>
             <div class="grid-item">
-                <div class="icon-circle"><img src="icon8.png"></div>
+                <div class="icon-circle"><img src="images/supp.png"></div>
                 <p>Konsultasi Online</p>
             </div>
         </div>
     </section>    
+
+        <!-- SECTION: Penerimaan Mahasiswa Baru -->
+        <section class="pmb">
+            <div class="slider-container">
+                <div class="slider">
+                    <img src="images/gratis-laptop-agutus-V9-1328x640-px-1.jpg" class="slide">
+                    <img src="images/SLDIER-PMB2.jpg" class="slide">
+                </div>
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
+            <script src="slider.js"></script> <!-- Link ke file JavaScript -->
+            
+        </section>
 
     <!-- SHORT LINK -->
     <section class="short-link">
         <h2>Short Link</h2>
         <div class="grid-container">
             <div class="grid-item">
-                <div class="icon-circle"><img src="icon1.png"></div>
+                <div class="icon-circle"><img src="images/www.png"></div>
                 <p>Website</p>
             </div>
             <div class="grid-item">
-                <div class="icon-circle"><img src="icon1.png"></div>
+                <div class="icon-circle"><img src="images/toga.png"></div>
                 <p>Info Program Sarjana</p>
             </div>
             <div class="grid-item">
-                <div class="icon-circle"><img src="icon1.png"></div>
+                <div class="icon-circle"><img src="images/toga-2.png"></div>
                 <p>Info Kursus & Sertifikasi</p>
             </div>
             <div class="grid-item">
-                <div class="icon-circle"><img src="icon1.png"></div>
+                <div class="icon-circle"><img src="images/bea.png"></div>
                 <p>Info Beasiswa</p>
             </div>
             <div class="grid-item">
-                <div class="icon-circle"><img src="icon1.png"></div>
+                <div class="icon-circle"><img src="images/voucher.png"></div>
                 <p>Klaim Voucher</p>
             </div>
             <div class="grid-item">
-                <div class="icon-circle"><img src="icon1.png"></div>
+                <div class="icon-circle"><img src="images/bros.png"></div>
                 <p>Download Brosur</p>
             </div>
             <div class="grid-item">
-                <div class="icon-circle"><img src="icon1.png"></div>
+                <div class="icon-circle"><img src="images/chat.png"></div>
                 <p>Chat Mimin</p>
             </div>
             <div class="grid-item">
-                <div class="icon-circle"><img src="icon1.png"></div>
+                <div class="icon-circle"><img src="images/loc2.png"></div>
                 <p>Lokasi Kampus</p>
             </div>
         </div>
@@ -104,13 +114,14 @@
 
     <!-- FOOTER -->
     <footer>
-        <p>Follow our <span class="highlight">Social Media</span></p>
+        <p>Follow our Social Media</p>
         <div class="social-icons">
-            <a href="#"><img src="instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="tiktok.png" alt="TikTok"></a>
-            <a href="#"><img src="youtube.png" alt="YouTube"></a>
-            <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-tumblr"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
         </div>
+    
     </footer>
 
 </body>
