@@ -30,7 +30,6 @@ body::before {
     padding-bottom: 20px;
 }
 
-
 .hero-content {
     max-width: 600px;
 }
@@ -68,6 +67,7 @@ body::before {
 }
 
 
+
 /* SECTION: PMB */
 .pmb img {
     width: 90%;
@@ -100,7 +100,7 @@ body::before {
     height: 3px;
     background: #FFC107;
     margin: 8px auto 0;
-    transition: width 0.3s ease-in-out;
+    transition: width 0.4s ease-in-out;
 }
 
 
@@ -111,15 +111,15 @@ body::before {
     height: 3px;
     background: #FFC107;
     margin: 8px auto 0;
-    transition: width 0.4s ease-in-out;
+    transition: width 0.5s ease-in-out;
 }
 
 .registration.wide-line h2::after {
-    width: 190px; 
+    width: 200px; 
 }
 
 .short-link.wide-line h2::after {
-    width: 120px; 
+    width: 150px; 
 }
 
 
@@ -176,8 +176,13 @@ body::before {
 footer {
     background: #1E3A8A;
     color: white;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 50px;
+    margin-top: 10px;
+}
+.footer-image {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px;
 }
 
 .social-icons {
@@ -255,7 +260,7 @@ footer {
 /* chat admin */
 .chat-admin {
     position: fixed;
-    bottom: 80px;
+    bottom: 120px;
     right: 20px;
     z-index: 1000;
 }
@@ -278,7 +283,14 @@ footer {
     font-size: 14px;
     color: #1E3A8A;
     font-weight: bold;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 189, 9, 0.2);
     padding: 5px 8px;
     border-radius: 5px;
+}
+.chat-admin span:hover {
+    background: #FFC107;
+    color: #1E3A8A;
+}
+.chat-admin a {
+    text-decoration: none; /* Remove underline */
 }

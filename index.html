@@ -125,8 +125,9 @@
                 <p>Lokasi Kampus</p>
             </div>
         </div>
-       
+
     </section>
+
     <!-- chatbot -->
     <div class="chat-admin">
         <a href="https://wa.me/62xxxxxxxxxx" target="_blank">
@@ -134,6 +135,7 @@
             <span>Chat Mimin</span>
         </a>
     </div>
+
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-wave"></div>
@@ -149,35 +151,40 @@
             </div>
         </div>
     </footer>
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-document.addEventListener("DOMContentLoaded", function () {
-    function addWideLineOnScroll(section, className) {
-        let observer = new IntersectionObserver(
-            function (entries) {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        section.classList.add(className);
-                    } else {
-                        section.classList.remove(className);
-                    }
-                });
-            },
-            { threshold: 0.6 } 
-        );
-        observer.observe(section);
-    }
+    document.addEventListener("DOMContentLoaded", function () {
+        function addWideLineOnScroll(section, className, thresholdValue) {
+            let observer = new IntersectionObserver(
+                function (entries) {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            section.classList.add(className);
+                        } else {
+                            section.classList.remove(className);
+                        }
+                    });
+                },
+                { threshold: thresholdValue } 
+            );
+            observer.observe(section);
+        }
 
     let registrationSection = document.querySelector(".registration");
     let shortLinkSection = document.querySelector(".short-link");
 
-    addWideLineOnScroll(registrationSection, "wide-line");
-    addWideLineOnScroll(shortLinkSection, "wide-line");
-});
+    if (registrationSection) {
+        addWideLineOnScroll(registrationSection, "wide-line", 0.65); // Threshold untuk registration
+    }
 
+    if (shortLinkSection) {
+        addWideLineOnScroll(shortLinkSection, "wide-line", 0.4); // Threshold untuk short link
+    }
+    });
 
+    </script>   
     </script>
-    </body>
     
 </body>
 </html>
