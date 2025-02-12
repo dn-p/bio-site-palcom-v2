@@ -15,7 +15,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.5); 
+    background: rgba(255, 255, 255, 0.9); 
     z-index: -1;
 }
 /* HEADER */
@@ -38,14 +38,14 @@ body::before {
 .hero h1 {
     text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
     color: #1440b9;
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 600;
 }
 
 .hero p {
     color: #FFC107;
     font-size: 18px;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .highlight {
@@ -76,51 +76,50 @@ body::before {
 }
 
 /* LINK PENDAFTARAN */
-.registration {
-    color: white;
+.registration,
+.short-link {
     padding: 20px;
     margin: 20px 0;
 }
+
 .registration h2,
 .short-link h2 {
     margin-bottom: 50px;
     color: #1E3A8A;
-}
-
-.short-link h2 {
-    margin-bottom: 50px;
-    color: #1E3A8A;
     position: relative;
     display: inline-block;
     font-size: 22px;
     font-weight: bold;
 }
 
-.short-link h2::after {
-    content: "";
-    display: block;
-    width: 109px;
-    height: 3px;
-    background: #FFC107;
-    margin: 8px auto 0;
-}
-
-.registration h2 {
-    margin-bottom: 50px;
-    color: #1E3A8A;
-    position: relative;
-    display: inline-block;
-    font-size: 22px;
-    font-weight: bold;
-}
 
 .registration h2::after {
     content: "";
     display: block;
-    width: 190px;
+    width: 1px; 
     height: 3px;
     background: #FFC107;
     margin: 8px auto 0;
+    transition: width 0.3s ease-in-out;
+}
+
+
+.short-link h2::after {
+    content: "";
+    display: block;
+    width: 1px; 
+    height: 3px;
+    background: #FFC107;
+    margin: 8px auto 0;
+    transition: width 0.4s ease-in-out;
+}
+
+.registration.wide-line h2::after {
+    width: 190px; 
+}
+
+.short-link.wide-line h2::after {
+    width: 120px; 
 }
 
 
@@ -131,7 +130,7 @@ body::before {
     gap: 20px;
     justify-content: center;
     text-align: center;
-    margin: 20px auto;
+    margin: 10px auto;
     max-width: 800px;
 }
 
@@ -172,18 +171,13 @@ body::before {
     height: auto;
 }
 
-.short-link {
-    color: white;
-    padding: 20px;
-    margin: 20px 0;
-}
 
 /* FOOTER */
 footer {
     background: #1E3A8A;
     color: white;
-    padding: 20px;
-    margin-top: 100px;
+    padding: 10px;
+    margin-top: 20px;
 }
 
 .social-icons {
@@ -193,26 +187,28 @@ footer {
 
 .social-icons a {
     text-decoration: none;
-    width: 50px;
-    height: 50px;
+    width: 60px; 
+    height: 60px; 
     background-color: aliceblue;
     margin: 10px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
+
 .social-icons a i {
     color: #1E3A8A;
     font-size: 26px;
     transition: 0.3s;
     opacity: 0.9;
+
 }
 .social-icons img {
-    width: 30px;
-    margin: 5px;
+    width: 60px;
+    margin: 0px;
 }
+
 
 /* Slider container */
 .slider-container {
@@ -255,3 +251,34 @@ footer {
 
 .prev { left: 10px; }
 .next { right: 10px; }
+
+/* chat admin */
+.chat-admin {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.chat-admin img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.chat-admin img:hover {
+    transform: scale(1.4);
+}
+
+.chat-admin span {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #1E3A8A;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 5px 8px;
+    border-radius: 5px;
+}

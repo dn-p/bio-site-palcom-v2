@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Campus</title>
+    <title>Palcomtech Smart Campus Bio Site</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -127,18 +127,57 @@
         </div>
        
     </section>
-
+    <!-- chatbot -->
+    <div class="chat-admin">
+        <a href="https://wa.me/62xxxxxxxxxx" target="_blank">
+            <img src="images/robot.png" alt="Chat Admin">
+            <span>Chat Mimin</span>
+        </a>
+    </div>
     <!-- FOOTER -->
-    <footer>
-        <p>Follow our Social Media</p>
-        <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#"><i class="fa-brands fa-tumblr"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    <footer class="footer">
+        <div class="footer-wave"></div>
+        <div class="footer-content">
+            <div class="footer-text">
+                <p>Follow our <span>Social Media</span></p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
         </div>
-    
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    function addWideLineOnScroll(section, className) {
+        let observer = new IntersectionObserver(
+            function (entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        section.classList.add(className);
+                    } else {
+                        section.classList.remove(className);
+                    }
+                });
+            },
+            { threshold: 0.6 } 
+        );
+        observer.observe(section);
+    }
 
+    let registrationSection = document.querySelector(".registration");
+    let shortLinkSection = document.querySelector(".short-link");
+
+    addWideLineOnScroll(registrationSection, "wide-line");
+    addWideLineOnScroll(shortLinkSection, "wide-line");
+});
+
+
+    </script>
+    </body>
+    
 </body>
 </html>
