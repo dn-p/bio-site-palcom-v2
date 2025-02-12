@@ -1,12 +1,23 @@
 /* Import font */
 body {
+    background: url('images/bg.jpeg') no-repeat center center fixed;
+    background-size: cover;
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f8f9fa;
     text-align: center;
 }
 
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); 
+    z-index: -1;
+}
 /* HEADER */
 .hero {
     background: url('images/header2.jpg') no-repeat center center/cover;
@@ -22,10 +33,10 @@ body {
 }
 
 .hero h1 {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
     margin-top: 80px;
-    color: #FFC107;
-    font-size: 24px;
+    color: #1440b9;
+    font-size: 30px;
     font-weight: 600;
 }
 
@@ -158,8 +169,8 @@ footer {
 /* Slider container */
 .slider-container {
     position: relative;
-    width: 120%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 800px;
     overflow: hidden;
     margin: auto;
 }
@@ -167,11 +178,19 @@ footer {
 /* Slider images */
 .slider {
     display: flex;
+    flex-wrap: nowrap;
     transition: transform 0.5s ease-in-out;
 }
 
 .slide {
-    width: 120%;
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 /* Navigation buttons */
@@ -179,7 +198,7 @@ footer {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
     color: white;
     border: none;
     padding: 10px;
