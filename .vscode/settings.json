@@ -4,5 +4,5 @@
     "editor.cursorBlinking": "expand",
     "editor.smoothScrolling": true,
     "editor.mouseWheelZoom": true,
-    "editor.bracketPairColorization.enabled": true
+    "editor.bracketPairColorization.enabled": true,    
 }
