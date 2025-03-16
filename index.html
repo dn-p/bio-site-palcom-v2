@@ -24,11 +24,11 @@
         <h2>Link Pendaftaran</h2>
         <div class="grid-container">
             <div class="grid-item">
-                <a href=""> <div class="icon-circle"><img src="images/toga.png"></div></a>
+                <a href=""> <div class="icon-circle"><img src="images/toga3.png"></div></a>
                 <p>Daftar Sarjana</p>
             </div>
             <div class="grid-item">
-                <a href=""> <div class="icon-circle"><img src="images/toga-2.png"></div></a>
+                <a href=""> <div class="icon-circle"><img src="asset/togaa.png"></div></a>
                 <p>Daftar Profesional 1 Tahun</p>
             </div>
             <div class="grid-item">
@@ -39,29 +39,33 @@
                 <a href=""><div class="icon-circle"><img src="asset/event.png"></div></a>
                 <p>Daftar Event & Workshop</p>
             </div>
-            <div class="grid-item">
-                <a href=""><div class="icon-circle"><img src="images/toga3.png"></div></a>
-                <p>Daftar Beasiswa</p>
-            </div>
-            <div class="grid-item">
-                <a href=""><div class="icon-circle"><img src="asset/building.png"></div></a>
-                <p>Daftar Campus Visit</p>
-            </div>
-            <div class="grid-item">
-                <a href=""><div class="icon-circle"><img src="asset/chat.png"></div></a>
-                <p>Konsultasi Online</p>
-            </div>
+
         </div>
     </section>    
 
-
  <!-- COFFEE TALK BANNER -->
  <section class="coffee-talk">
-        <div class="coffee-talk-content">
-            <h2>Coffee Talk</h2>
-            <p>Join our Coffee Talk to get more information about our campus</p>
-            <a href="#" class="ct-button">Join Coffee Talk</a>
+    <div class="coffee-talk-content">
+        <h2>Coffee Talk</h2>
+        <p>Join our Coffee Talk <br><span> get more information about our campus</span></p>
+        <a href="#" class="ct-button">Join Coffee Talk</a>
+    </div>
+</section>
+ <!-- BEASISWA BANNER -->
+ <section class="banner-beasiswa">
+        <div class="beasiswa-content">
+            <h2>Raih Beasiswa</h2>
+            <p>Hingga 2.2 Milyar</p>
+            <a href="#" class="ct-button">Daftar Beasiswa</a>
         </div>
+</section>
+ <!-- INFO BANNER -->
+ <section class="banner-info">
+    <div class="info-content">
+        <h2>Get to know more</h2>
+        <p>About Palcomtech Program</p>
+        <a href="#" class="ct-button">Download Brosur</a>
+    </div>
 </section>
 <!-- SHORT LINK -->
 <section class="short-link">
@@ -71,31 +75,56 @@
                 <a href="">
                     <div class="icon-circle"><img src="asset/web.png"></div>
                 </a>
-                <p>Website</p>
+                <p>Official Website</p>
             </div>
             <div class="grid-item">
                 <a href="">
-                    <div class="icon-circle"><img src="asset/sarjana.png"></div>
+                    <div class="icon-circle"><img src="asset/akre.png"></div>
                 </a>
-                <p>Info Program Sarjana</p>
+                <p>Akreditasi, Prestasi & Penghargaan</p>
             </div>
             <div class="grid-item">
                 <a href="">
-                    <div class="icon-circle"><img src="asset/scourse.png"></div>
+                    <div class="icon-circle"><img src="asset/faskam.png"></div>
                 </a>
-                <p>Info Kursus & Sertifikasi</p>
+                <p>Fasilitas Kampus</p>
             </div>
             <div class="grid-item">
                 <a href="">
-                    <div class="icon-circle"><img src="asset/bea.png"></div>
+                    <div class="icon-circle"><img src="asset/dosen.png"></div>
                 </a>
-                <p>Info Beasiswa</p>
+                <p>Profil Dosen</p>
+            </div>
+            <div class="grid-item">
+                <a href="">
+                    <div class="icon-circle">
+                        <img src="asset/club.png"></div>
+                </a>
+                <p>Student Club</p>
             </div>
             <div class="grid-item">
                 <a href="">
                     <div class="icon-circle"><img src="asset/Untitled-1.png"></div>
                 </a>
                 <p>Klaim Voucher</p>
+            </div>
+            <div class="grid-item">
+                <a href="">
+                    <div class="icon-circle"><img src="asset/lulus.png"></div>
+                </a>
+                <p>Prospek Lulusan</p>
+            </div>
+            <div class="grid-item">
+                <a href="">
+                    <div class="icon-circle"><img src="asset/alumni.png"></div>
+                </a>
+                <p>Alumni Palcomtech</p>
+            </div>
+            <div class="grid-item">
+                <a href="">
+                    <div class="icon-circle"><img src="asset/kontr.png"></div>
+                </a>
+                <p>Kontribusi Palcomtech</p>
             </div>
             <div class="grid-item">
                 <a href="">
@@ -110,7 +139,6 @@
                 <p>Lokasi Kampus</p>
             </div>
         </div>
-
     </section>
 
     <!-- chatbot -->
@@ -123,12 +151,6 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="waves">
-            <div class="wave" id="wave1"></div>
-            <div class="wave" id="wave2"></div>
-            <div class="wave" id="wave3"></div>
-            <div class="wave" id="wave"></div>
-        </div>
         <div class="footer-content">
             <div class="footer-text">
                 <p>Follow our <span>Social Media</span></p>
@@ -142,39 +164,7 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        function addWideLineOnScroll(section, className, thresholdValue) {
-            let observer = new IntersectionObserver(
-                function (entries) {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            section.classList.add(className);
-                        } else {
-                            section.classList.remove(className);
-                        }
-                    });
-                },
-                { threshold: thresholdValue } 
-            );
-            observer.observe(section);
-        }
-
-    let registrationSection = document.querySelector(".registration");
-    let shortLinkSection = document.querySelector(".short-link");
-
-    if (registrationSection) {
-        addWideLineOnScroll(registrationSection, "wide-line", 0.65); // Threshold untuk registration
-    }
-
-    if (shortLinkSection) {
-        addWideLineOnScroll(shortLinkSection, "wide-line", 0.4); // Threshold untuk short link
-    }
-    });
-
-    </script>   
-    </script>
+<script src="app.js"></script>
 
 </body>
 </html>
