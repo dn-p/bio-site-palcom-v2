@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    background: url('images/header2.jpg') no-repeat center /cover;
+    background: url('images/header.png') no-repeat center /cover;
     padding: 50px 20px;
 }
 
@@ -33,6 +33,7 @@ body {
 }
 
 .hero p {
+    font-weight: bold;
     color: #FFC107;
     font-size: 18px;
     margin-top: 5px;
@@ -43,20 +44,6 @@ body {
     color: #1E3A8A;
 }
 
-.cta-button {
-    background: #FFC107;
-    color: #1E3A8A;
-    padding: 10px 24px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
-    display: inline-block;
-    transition: background 0.3s ease, color 0.3s ease;
-}
-.cta-button:hover {
-    background: #1E3A8A; 
-    color: #FFC107; 
-}
 
 /* LINK PENDAFTARAN */
 .registration,
@@ -117,7 +104,7 @@ body {
 /* Grid Layout */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
     gap: 0px;
     justify-content: center;
     text-align: center;
@@ -132,93 +119,69 @@ body {
     align-items: center;
 }
 
-.grid-item p {
-    font-size: 16px;
-    color: #000;
-    margin-top: 10px;
-}
+
 
 /* Circle Wrapper */
 .icon-circle {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     background: #FFC107;
     border-radius: 31%;
     display: flex;
+    flex-direction: column; /* Agar teks berada di bawah gambar */
     justify-content: center;
     align-items: center;
+    padding: 10px; /* Tambahkan padding agar lebih rapi */
+    position: relative;
 }
 
-/* Image Styling */
 .icon-circle img {
     width: 60px;
     height: 60px;
-    border-radius: 10%;
+    border-radius: 0%;
+}
+
+.icon-circle a{
+    text-decoration: none;
+}
+.icon-circle p {
+    color: #ffffff; /* Warna teks */
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 5px; /* Jarak antara gambar dan teks */
 }
 
 /* Text Styling */
-.grid-item p {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #1E3A8A;
-    text-decoration: none;
-}
 .grid-item img {
     width: 90px;
     height: auto;
 }
-
+.grid-item p{
+    color: #1E3A8A;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px; /* Jarak antara gambar dan teks */
+    text-decoration: none;
+}
+.grid-item a {
+    text-decoration: none;
+}
 
 /* FOOTER */
-footer
-{
-    position: static;
-    background: url('images/footer.png') no-repeat center /cover;
-    padding: 60px 10px;
-    flex-direction: column;
-}
-
-.social-icons {
-    display: flex;
-    justify-content:flex-start
-}
-
-.social-icons a {
-    text-decoration: none;
-    width: 40px; 
-    height: 40px; 
-    background-color: aliceblue;
-    margin: 10px;
-    border-radius: 50%;
+footer {
+    color: #fff;
+    padding: 0px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.social-icons a:hover
-{
-    transform: translateY(-10px);
-    transition: transform 0.3s;
+    position: relative; 
 }
 
-.social-icons a i {
-    color: #1E3A8A;
-    font-size: 20px;
-    transition: 0.3s;
-    opacity: 0.9;
-
-}
-.social-icons img {
-    width: 40px;
-}
-
-
-footer p
-{
-    margin-left: 14px;
-    color: #fff;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    font-size: 16px;
+.footer img {
+    max-width: 100%;  
+    height: auto;    
+    display: block;  
 }
 
 /* Coffee Talk Banner */
@@ -226,6 +189,7 @@ footer p
     background: url('asset/coffees.png') no-repeat center center;
     padding: 50px 0px;
     width: 100vw;
+    height: auto;
     display: flex;
     justify-content: center; /* Memastikan kontennya tetap di tengah */
 }
@@ -242,6 +206,7 @@ footer p
     font-size: 36px;
     font-weight: bold;
 }
+
 .coffee-talk p span {
     color: #ffffff;
     font-weight: lighter;
@@ -253,26 +218,11 @@ footer p
     margin-bottom: 20px;
 }
 
-.ct-button {
-    background: #FFC107;
-    color: #1E3A8A;
-    padding: 10px 24px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 8px;
-    display: inline-block; /* Pastikan tombol hanya sebesar kontennya */
-    transition: background 0.3s ease, color 0.3s ease;
-}
-
-.ct-button:hover {
-    background: #1E3A8A; 
-    color: #FFC107; 
-}
 
 /* BANNER BEASISWA */
 .banner-beasiswa {
     background: url('asset/beas.png') no-repeat center center;
-    padding: 60px 0px;
+    padding: 50px 0px;
     width: 100vw;
     display: flex;
     justify-content: center; /* Memastikan kontennya tetap di tengah */
@@ -299,21 +249,6 @@ footer p
     margin-bottom: 20px;
 }
 
-.ct-button {
-    background: #FFC107;
-    color: #1E3A8A;
-    padding: 10px 24px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 8px;
-    display: inline-block; /* Pastikan tombol hanya sebesar kontennya */
-    transition: background 0.3s ease, color 0.3s ease;
-}
-
-.ct-button:hover {
-    background: #1E3A8A; 
-    color: #FFC107; 
-}
 
 /* BANNER KAMPUS */
 .banner-info {
@@ -347,22 +282,6 @@ footer p
     color: #ffffff;
     font-size: 18px;
     margin-bottom: 50px;
-}
-
-.ct-button {
-    background: #FFC107;
-    color: #1E3A8A;
-    padding: 10px 24px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 8px;
-    display: inline-block; /* Pastikan tombol hanya sebesar kontennya */
-    transition: background 0.3s ease, color 0.3s ease;
-}
-
-.ct-button:hover {
-    background: #1E3A8A; 
-    color: #FFC107; 
 }
 
 /* chat admin */
